@@ -24,7 +24,7 @@
                                                    launchOptions:launchOptions];
   rootView.backgroundColor = [UIColor blackColor];
   
-  NSLog(@"========>>>%@",rootView.bridge.bundleURL.absoluteString);
+  NSLog(@"========>>>%@",NSHomeDirectory());
   
 
   self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];

@@ -19,11 +19,12 @@ export default class App extends Component {
   render() {
     return (
       <View style={styles.container}>
+       {/* <Image style={{width: 80, height: 80}} source={{ uri: imageUrl }}></Image>
        <Image style={{width: 80, height: 80}} source={{ uri: imageUrl }}></Image>
        <Image style={{width: 80, height: 80}} source={{ uri: imageUrl }}></Image>
        <Image style={{width: 80, height: 80}} source={{ uri: imageUrl }}></Image>
-       <Image style={{width: 80, height: 80}} source={{ uri: imageUrl }}></Image>
-       <Image style={{width: 80, height: 80}} source={miaobiGif}></Image>
+       <Image style={{width: 80, height: 80}} source={miaobiGif}></Image> */}
+       <Image style={{width: 80, height: 80}} source={{uri:'1'}}></Image>
       </View>
     );
   }

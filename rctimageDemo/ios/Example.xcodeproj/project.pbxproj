@@ -11,7 +11,8 @@
 		13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB11A68108700A75B9A /* LaunchScreen.xib */; };
 		13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
-		4D6454AF22B4BED80037F563 /* RCTImageView+RNS.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6454AE22B4BED80037F563 /* RCTImageView+RNS.m */; };
+		4D4EA8CA22B7664F00CF4CB9 /* RNSImageLoadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EA8C622B7664F00CF4CB9 /* RNSImageLoadManager.m */; };
+		4D4EA8CB22B7664F00CF4CB9 /* UIImageView+RNS.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D4EA8C922B7664F00CF4CB9 /* UIImageView+RNS.m */; };
 		AAB2A3B9CB6A7A78C945B7B8 /* libPods-Example.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1846BBEED576D72833C6FFD8 /* libPods-Example.a */; };
 		ED297163215061F000B7C4FE /* JavaScriptCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED297162215061F000B7C4FE /* JavaScriptCore.framework */; };
 /* End PBXBuildFile section */
@@ -28,8 +29,10 @@
 		13B07FB71A68108700A75B9A /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = Example/main.m; sourceTree = "<group>"; };
 		1846BBEED576D72833C6FFD8 /* libPods-Example.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Example.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2D16E6891FA4F8E400B85C8A /* libReact.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; path = libReact.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		4D6454AD22B4BED80037F563 /* RCTImageView+RNS.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RCTImageView+RNS.h"; sourceTree = "<group>"; };
-		4D6454AE22B4BED80037F563 /* RCTImageView+RNS.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "RCTImageView+RNS.m"; sourceTree = "<group>"; };
+		4D4EA8C622B7664F00CF4CB9 /* RNSImageLoadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNSImageLoadManager.m; sourceTree = "<group>"; };
+		4D4EA8C722B7664F00CF4CB9 /* RNSImageLoadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNSImageLoadManager.h; sourceTree = "<group>"; };
+		4D4EA8C822B7664F00CF4CB9 /* UIImageView+RNS.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+RNS.h"; sourceTree = "<group>"; };
+		4D4EA8C922B7664F00CF4CB9 /* UIImageView+RNS.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+RNS.m"; sourceTree = "<group>"; };
 		BD5BA64A3990A9A0F91C98D9 /* Pods-Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.release.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.release.xcconfig"; sourceTree = "<group>"; };
 		D80499E018AE98FDBC1EAA8E /* Pods-Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Example.debug.xcconfig"; path = "Target Support Files/Pods-Example/Pods-Example.debug.xcconfig"; sourceTree = "<group>"; };
 		ED297162215061F000B7C4FE /* JavaScriptCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = JavaScriptCore.framework; path = System/Library/Frameworks/JavaScriptCore.framework; sourceTree = SDKROOT; };
@@ -69,14 +72,16 @@
 		13B07FAE1A68108700A75B9A /* Example */ = {
 			isa = PBXGroup;
 			children = (
+				4D4EA8C722B7664F00CF4CB9 /* RNSImageLoadManager.h */,
+				4D4EA8C622B7664F00CF4CB9 /* RNSImageLoadManager.m */,
+				4D4EA8C822B7664F00CF4CB9 /* UIImageView+RNS.h */,
+				4D4EA8C922B7664F00CF4CB9 /* UIImageView+RNS.m */,
 				13B07FAF1A68108700A75B9A /* AppDelegate.h */,
 				13B07FB01A68108700A75B9A /* AppDelegate.m */,
 				13B07FB51A68108700A75B9A /* Images.xcassets */,
 				13B07FB61A68108700A75B9A /* Info.plist */,
 				13B07FB11A68108700A75B9A /* LaunchScreen.xib */,
 				13B07FB71A68108700A75B9A /* main.m */,
-				4D6454AD22B4BED80037F563 /* RCTImageView+RNS.h */,
-				4D6454AE22B4BED80037F563 /* RCTImageView+RNS.m */,
 			);
 			name = Example;
 			sourceTree = "<group>";
@@ -235,8 +240,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				13B07FBC1A68108700A75B9A /* AppDelegate.m in Sources */,
+				4D4EA8CA22B7664F00CF4CB9 /* RNSImageLoadManager.m in Sources */,
+				4D4EA8CB22B7664F00CF4CB9 /* UIImageView+RNS.m in Sources */,
 				13B07FC11A68108700A75B9A /* main.m in Sources */,
-				4D6454AF22B4BED80037F563 /* RCTImageView+RNS.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

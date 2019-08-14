@@ -41,7 +41,7 @@ static RNSImageLoadManager * manager = nil;
 - (instancetype)init{
     self = [super init];
     if (self) {
-        self.imageLoadQueue = dispatch_queue_create("com.xihu.shihuimiao", DISPATCH_QUEUE_CONCURRENT);
+        self.imageLoadQueue = dispatch_queue_create("com.xihu.xyz", DISPATCH_QUEUE_CONCURRENT);
     }
     return self;
 }
